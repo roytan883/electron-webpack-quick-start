@@ -9,9 +9,12 @@
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.43",
     "antd-mobile": "^2.1.8",
+    "material-ui": "^1.0.0-beta.45",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-helmet": "^5.2.0",
     "react-native": "^0.55.3",
     "source-map-support": "^0.5.5"
   },
