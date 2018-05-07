@@ -9,6 +9,8 @@
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "source-map-support": "^0.5.5"
   },
   "devDependencies": {
@@ -18,12 +20,10 @@
     "electron-webpack": "^2.0.1",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
     "webpack": "^4.7.0",
     "webpack-sources": "1.1.0"
   },
   "resolutions": {
-    "webpack-sources": "1.0.1"
+    "webpack-sources": "1.1.0"
   }
 }
