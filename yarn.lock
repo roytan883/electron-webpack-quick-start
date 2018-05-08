@@ -292,6 +292,12 @@
   dependencies:
     lodash "^4.2.0"
 
+"@babel/helper-regex@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/helper-regex/download/@babel/helper-regex-7.0.0-beta.46.tgz#df3675cec700e062d823225c52830e012f32308f"
+  dependencies:
+    lodash "^4.2.0"
+
 "@babel/helper-remap-async-to-generator@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/helper-remap-async-to-generator/-/helper-remap-async-to-generator-7.0.0-beta.44.tgz#8ad8c12a57444042ca281bdb16734841425938ad"
@@ -302,7 +308,7 @@
     "@babel/traverse" "7.0.0-beta.44"
     "@babel/types" "7.0.0-beta.44"
 
-"@babel/helper-remap-async-to-generator@^7.0.0-beta":
+"@babel/helper-remap-async-to-generator@7.0.0-beta.46", "@babel/helper-remap-async-to-generator@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/helper-remap-async-to-generator/-/helper-remap-async-to-generator-7.0.0-beta.46.tgz#275d455dbced4c807543f001302a40303a3f0914"
   dependencies:
@@ -422,7 +428,15 @@
     "@babel/helper-remap-async-to-generator" "7.0.0-beta.44"
     "@babel/plugin-syntax-async-generators" "7.0.0-beta.44"
 
-"@babel/plugin-proposal-class-properties@^7.0.0-beta":
+"@babel/plugin-proposal-async-generator-functions@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-async-generator-functions/download/@babel/plugin-proposal-async-generator-functions-7.0.0-beta.46.tgz#395330d1d5d7fb76c33b7bd99750adeafc37c68c"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/helper-remap-async-to-generator" "7.0.0-beta.46"
+    "@babel/plugin-syntax-async-generators" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-class-properties@7.0.0-beta.46", "@babel/plugin-proposal-class-properties@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.0.0-beta.46.tgz#1c505f8df3a312beb41c88d74209d5b6d537fa3d"
   dependencies:
@@ -431,6 +445,70 @@
     "@babel/helper-replace-supers" "7.0.0-beta.46"
     "@babel/plugin-syntax-class-properties" "7.0.0-beta.46"
 
+"@babel/plugin-proposal-decorators@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-decorators/download/@babel/plugin-proposal-decorators-7.0.0-beta.46.tgz#48c89fc48dc461db03f1260675c73f98afeeddcc"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-decorators" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-do-expressions@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-do-expressions/download/@babel/plugin-proposal-do-expressions-7.0.0-beta.46.tgz#1163a4d9cddb0aa22503a6692a7e1b5a8e0085d0"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-do-expressions" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-export-default-from@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-export-default-from/download/@babel/plugin-proposal-export-default-from-7.0.0-beta.46.tgz#950321f024846ea1d45847c77b695fb4dbc549b9"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-export-default-from" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-export-namespace-from@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-export-namespace-from/download/@babel/plugin-proposal-export-namespace-from-7.0.0-beta.46.tgz#81fa717faa390db694c2b2f241830a31d01f5170"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-export-namespace-from" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-function-bind@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-function-bind/download/@babel/plugin-proposal-function-bind-7.0.0-beta.46.tgz#3f83ce96a43405cf34362a916be0f19519a3161d"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-function-bind" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-function-sent@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-function-sent/download/@babel/plugin-proposal-function-sent-7.0.0-beta.46.tgz#86c6fbf204a338c32c8ad223ca437c5652845f39"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/helper-wrap-function" "7.0.0-beta.46"
+    "@babel/plugin-syntax-function-sent" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-logical-assignment-operators@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-logical-assignment-operators/download/@babel/plugin-proposal-logical-assignment-operators-7.0.0-beta.46.tgz#9fcc1c66d0632d6724f5a8bb13149b4c3d18a5f7"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-logical-assignment-operators" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-nullish-coalescing-operator@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-nullish-coalescing-operator/download/@babel/plugin-proposal-nullish-coalescing-operator-7.0.0-beta.46.tgz#e2cd1860c6bbd13b8469fba2bc7f72e4feeec299"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-nullish-coalescing-operator" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-numeric-separator@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-numeric-separator/download/@babel/plugin-proposal-numeric-separator-7.0.0-beta.46.tgz#a34b9273073ca78646a553af1376d92f15191016"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-numeric-separator" "7.0.0-beta.46"
+
 "@babel/plugin-proposal-object-rest-spread@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.0.0-beta.44.tgz#b7817770cb9cf72f2e73ca6fcb83d61a87305259"
@@ -438,7 +516,7 @@
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
     "@babel/plugin-syntax-object-rest-spread" "7.0.0-beta.44"
 
-"@babel/plugin-proposal-object-rest-spread@^7.0.0-beta":
+"@babel/plugin-proposal-object-rest-spread@7.0.0-beta.46", "@babel/plugin-proposal-object-rest-spread@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.0.0-beta.46.tgz#fb3979488a52c1246cdced4a438ace0f47ac985b"
   dependencies:
@@ -452,6 +530,34 @@
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
     "@babel/plugin-syntax-optional-catch-binding" "7.0.0-beta.44"
 
+"@babel/plugin-proposal-optional-catch-binding@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-optional-catch-binding/download/@babel/plugin-proposal-optional-catch-binding-7.0.0-beta.46.tgz#fda50deaab3272500a8a1c7088d7d55148f54048"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-optional-catch-binding" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-optional-chaining@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-optional-chaining/download/@babel/plugin-proposal-optional-chaining-7.0.0-beta.46.tgz#2c8926e6c8c70bbb3844bb2cce61dcd9287176ee"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-optional-chaining" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-pipeline-operator@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-pipeline-operator/download/@babel/plugin-proposal-pipeline-operator-7.0.0-beta.46.tgz#0804b24052d83d6ff45b5020f8b47c1bedd410eb"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-pipeline-operator" "7.0.0-beta.46"
+
+"@babel/plugin-proposal-throw-expressions@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-throw-expressions/download/@babel/plugin-proposal-throw-expressions-7.0.0-beta.46.tgz#eb259c73043050a51e40b53e74342763aa9b77b4"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-syntax-throw-expressions" "7.0.0-beta.46"
+
 "@babel/plugin-proposal-unicode-property-regex@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-unicode-property-regex/-/plugin-proposal-unicode-property-regex-7.0.0-beta.44.tgz#5efb0ddbe6635b4cb6674e961a16c28cef3cdb7f"
@@ -460,11 +566,25 @@
     "@babel/helper-regex" "7.0.0-beta.44"
     regexpu-core "^4.1.3"
 
+"@babel/plugin-proposal-unicode-property-regex@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-proposal-unicode-property-regex/download/@babel/plugin-proposal-unicode-property-regex-7.0.0-beta.46.tgz#b422a602094d7feeea4a7b81e7e32d1687337123"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/helper-regex" "7.0.0-beta.46"
+    regexpu-core "^4.1.3"
+
 "@babel/plugin-syntax-async-generators@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-async-generators/-/plugin-syntax-async-generators-7.0.0-beta.44.tgz#5cf7ec4256ddd7df62654171059188bee2b3addc"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
+
+"@babel/plugin-syntax-async-generators@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-async-generators/download/@babel/plugin-syntax-async-generators-7.0.0-beta.46.tgz#b35149e02748922d8e39506b0ac001a27bf449ed"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
 
 "@babel/plugin-syntax-class-properties@7.0.0-beta.46":
   version "7.0.0-beta.46"
@@ -472,9 +592,33 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.46"
 
-"@babel/plugin-syntax-dynamic-import@^7.0.0-beta":
+"@babel/plugin-syntax-decorators@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-decorators/download/@babel/plugin-syntax-decorators-7.0.0-beta.46.tgz#e60903d38dc5aaeab07eb3aaf8582055570300fe"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-do-expressions@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-do-expressions/download/@babel/plugin-syntax-do-expressions-7.0.0-beta.46.tgz#8ab754da073dc7340ed027f713aec26d1500a455"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-dynamic-import@7.0.0-beta.46", "@babel/plugin-syntax-dynamic-import@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-dynamic-import/-/plugin-syntax-dynamic-import-7.0.0-beta.46.tgz#651459c419d5ec0609a518370a417b8b47c52583"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-export-default-from@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-export-default-from/download/@babel/plugin-syntax-export-default-from-7.0.0-beta.46.tgz#88e0043c680d4ca881adeac11246ebfc6257dda4"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-export-namespace-from@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-export-namespace-from/download/@babel/plugin-syntax-export-namespace-from-7.0.0-beta.46.tgz#aba4fcb34a0afec4f5b3c526ff693708b72a2fd0"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.46"
 
@@ -484,9 +628,45 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.46"
 
+"@babel/plugin-syntax-function-bind@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-function-bind/download/@babel/plugin-syntax-function-bind-7.0.0-beta.46.tgz#e44281aba4c02be1213aa4a9b338114fc8b8c052"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-function-sent@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-function-sent/download/@babel/plugin-syntax-function-sent-7.0.0-beta.46.tgz#440dbaf6e0bcd60e0b47cd6dfa02e7d09baefb04"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-import-meta@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-import-meta/download/@babel/plugin-syntax-import-meta-7.0.0-beta.46.tgz#b86f3ceb94b1744555b3c9271be51ca31b1aedf3"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
 "@babel/plugin-syntax-jsx@7.0.0-beta.46":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.0.0-beta.46.tgz#ed2e8a43716e7904ae33dca71d5f2b436f0f25e8"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-logical-assignment-operators@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-logical-assignment-operators/download/@babel/plugin-syntax-logical-assignment-operators-7.0.0-beta.46.tgz#86c03db039b100420a489e410df4b4377e098cbb"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-nullish-coalescing-operator@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-nullish-coalescing-operator/download/@babel/plugin-syntax-nullish-coalescing-operator-7.0.0-beta.46.tgz#714544b7e3a9bc2540ee2e80319ae157ebb34d7d"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-numeric-separator@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-numeric-separator/download/@babel/plugin-syntax-numeric-separator-7.0.0-beta.46.tgz#54c820bf32192378db78a68586e0d69bcf5f2943"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.46"
 
@@ -508,13 +688,37 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
+"@babel/plugin-syntax-optional-catch-binding@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-optional-catch-binding/download/@babel/plugin-syntax-optional-catch-binding-7.0.0-beta.46.tgz#701ba500cc154dd87c4d16a41fa858e9ffc6db89"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-optional-chaining@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-optional-chaining/download/@babel/plugin-syntax-optional-chaining-7.0.0-beta.46.tgz#77c51b180a9895d701b398441d94815c56946a75"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-pipeline-operator@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-pipeline-operator/download/@babel/plugin-syntax-pipeline-operator-7.0.0-beta.46.tgz#d34ce265f1800131e7e8dbf1404ad6a8a829214b"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
+"@babel/plugin-syntax-throw-expressions@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-syntax-throw-expressions/download/@babel/plugin-syntax-throw-expressions-7.0.0-beta.46.tgz#f0b759c3122ded926b884c6c30e32192da048388"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
 "@babel/plugin-transform-arrow-functions@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-arrow-functions/-/plugin-transform-arrow-functions-7.0.0-beta.44.tgz#718dae35046eca6938c731d1eae10c5471c17398"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
-"@babel/plugin-transform-arrow-functions@^7.0.0-beta":
+"@babel/plugin-transform-arrow-functions@7.0.0-beta.46", "@babel/plugin-transform-arrow-functions@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-arrow-functions/-/plugin-transform-arrow-functions-7.0.0-beta.46.tgz#130e79b1d4508767c47e5febb809f8dca80c05f5"
   dependencies:
@@ -528,11 +732,25 @@
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
     "@babel/helper-remap-async-to-generator" "7.0.0-beta.44"
 
+"@babel/plugin-transform-async-to-generator@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-async-to-generator/download/@babel/plugin-transform-async-to-generator-7.0.0-beta.46.tgz#29fd5967f5056ca80f3a97db4d2ffa38a0dc2dce"
+  dependencies:
+    "@babel/helper-module-imports" "7.0.0-beta.46"
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/helper-remap-async-to-generator" "7.0.0-beta.46"
+
 "@babel/plugin-transform-block-scoped-functions@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-block-scoped-functions/-/plugin-transform-block-scoped-functions-7.0.0-beta.44.tgz#d31bb2231ae861fa4ea6f9974b8b8f5641a3460a"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
+
+"@babel/plugin-transform-block-scoped-functions@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-block-scoped-functions/download/@babel/plugin-transform-block-scoped-functions-7.0.0-beta.46.tgz#0925a549931f61b45880618b0b42da4790b7c0b3"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
 
 "@babel/plugin-transform-block-scoping@7.0.0-beta.44":
   version "7.0.0-beta.44"
@@ -541,7 +759,7 @@
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
     lodash "^4.2.0"
 
-"@babel/plugin-transform-block-scoping@^7.0.0-beta":
+"@babel/plugin-transform-block-scoping@7.0.0-beta.46", "@babel/plugin-transform-block-scoping@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-block-scoping/-/plugin-transform-block-scoping-7.0.0-beta.46.tgz#da42dd17fbed675c72233988dbad9ace5ab9e4a7"
   dependencies:
@@ -561,7 +779,7 @@
     "@babel/helper-split-export-declaration" "7.0.0-beta.44"
     globals "^11.1.0"
 
-"@babel/plugin-transform-classes@^7.0.0-beta":
+"@babel/plugin-transform-classes@7.0.0-beta.46", "@babel/plugin-transform-classes@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-classes/-/plugin-transform-classes-7.0.0-beta.46.tgz#00c856feda2ee756c4cc6ef8c97d17d070acebf7"
   dependencies:
@@ -580,7 +798,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
-"@babel/plugin-transform-computed-properties@^7.0.0-beta":
+"@babel/plugin-transform-computed-properties@7.0.0-beta.46", "@babel/plugin-transform-computed-properties@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-computed-properties/-/plugin-transform-computed-properties-7.0.0-beta.46.tgz#ca1ece27615f7324345713fb6a93dd288788e891"
   dependencies:
@@ -592,7 +810,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
-"@babel/plugin-transform-destructuring@^7.0.0-beta":
+"@babel/plugin-transform-destructuring@7.0.0-beta.46", "@babel/plugin-transform-destructuring@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.0.0-beta.46.tgz#6e6a097da31063f545f7818afe48ef09165ce5ff"
   dependencies:
@@ -606,11 +824,25 @@
     "@babel/helper-regex" "7.0.0-beta.44"
     regexpu-core "^4.1.3"
 
+"@babel/plugin-transform-dotall-regex@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-dotall-regex/download/@babel/plugin-transform-dotall-regex-7.0.0-beta.46.tgz#e5bbd78c1a94455e6d5dd1c77f32357b84355e06"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/helper-regex" "7.0.0-beta.46"
+    regexpu-core "^4.1.3"
+
 "@babel/plugin-transform-duplicate-keys@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-duplicate-keys/-/plugin-transform-duplicate-keys-7.0.0-beta.44.tgz#e945a7990d9adca4f9b58a7af46cdb1515b925b1"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
+
+"@babel/plugin-transform-duplicate-keys@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-duplicate-keys/download/@babel/plugin-transform-duplicate-keys-7.0.0-beta.46.tgz#7e94e42099b099742617838237b0d6e1a9b2690f"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
 
 "@babel/plugin-transform-exponentiation-operator@7.0.0-beta.44":
   version "7.0.0-beta.44"
@@ -619,7 +851,7 @@
     "@babel/helper-builder-binary-assignment-operator-visitor" "7.0.0-beta.44"
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
-"@babel/plugin-transform-exponentiation-operator@^7.0.0-beta":
+"@babel/plugin-transform-exponentiation-operator@7.0.0-beta.46", "@babel/plugin-transform-exponentiation-operator@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-exponentiation-operator/-/plugin-transform-exponentiation-operator-7.0.0-beta.46.tgz#95ae2e03456e417d2f5eace6d05a8fccb7af1bcc"
   dependencies:
@@ -639,7 +871,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
-"@babel/plugin-transform-for-of@^7.0.0-beta":
+"@babel/plugin-transform-for-of@7.0.0-beta.46", "@babel/plugin-transform-for-of@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-for-of/-/plugin-transform-for-of-7.0.0-beta.46.tgz#ce643487384c96d1bd1f57a112b2ccba6c34da5c"
   dependencies:
@@ -652,7 +884,7 @@
     "@babel/helper-function-name" "7.0.0-beta.44"
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
-"@babel/plugin-transform-function-name@^7.0.0-beta":
+"@babel/plugin-transform-function-name@7.0.0-beta.46", "@babel/plugin-transform-function-name@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-function-name/-/plugin-transform-function-name-7.0.0-beta.46.tgz#2479f5188de9ab1f99396bce83b3b9d39bc13bdb"
   dependencies:
@@ -665,7 +897,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
-"@babel/plugin-transform-literals@^7.0.0-beta":
+"@babel/plugin-transform-literals@7.0.0-beta.46", "@babel/plugin-transform-literals@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-literals/-/plugin-transform-literals-7.0.0-beta.46.tgz#84f5bcfe914b9fd4385c0ddf469f9ed403ee68bd"
   dependencies:
@@ -678,6 +910,13 @@
     "@babel/helper-module-transforms" "7.0.0-beta.44"
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
+"@babel/plugin-transform-modules-amd@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-modules-amd/download/@babel/plugin-transform-modules-amd-7.0.0-beta.46.tgz#01aeb4887c7df7059cefe4a206eefdf190c79f48"
+  dependencies:
+    "@babel/helper-module-transforms" "7.0.0-beta.46"
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
 "@babel/plugin-transform-modules-commonjs@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.0.0-beta.44.tgz#864a1fef64091bd5241b0aa7d4b235fb29f60580"
@@ -686,7 +925,7 @@
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
     "@babel/helper-simple-access" "7.0.0-beta.44"
 
-"@babel/plugin-transform-modules-commonjs@^7.0.0-beta":
+"@babel/plugin-transform-modules-commonjs@7.0.0-beta.46", "@babel/plugin-transform-modules-commonjs@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.0.0-beta.46.tgz#9dcb42e1282b281c1a2075f98b4a850533acfd9c"
   dependencies:
@@ -701,6 +940,13 @@
     "@babel/helper-hoist-variables" "7.0.0-beta.44"
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
+"@babel/plugin-transform-modules-systemjs@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-modules-systemjs/download/@babel/plugin-transform-modules-systemjs-7.0.0-beta.46.tgz#313e13e8edccaae6c645e3798a043521cf73df04"
+  dependencies:
+    "@babel/helper-hoist-variables" "7.0.0-beta.46"
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
 "@babel/plugin-transform-modules-umd@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-umd/-/plugin-transform-modules-umd-7.0.0-beta.44.tgz#66ca82476b72bfd1ce2d410ceaf2e85c1639a616"
@@ -708,11 +954,24 @@
     "@babel/helper-module-transforms" "7.0.0-beta.44"
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
+"@babel/plugin-transform-modules-umd@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-modules-umd/download/@babel/plugin-transform-modules-umd-7.0.0-beta.46.tgz#ad0ef488a123f479825c1ffe75c5bba9954a449c"
+  dependencies:
+    "@babel/helper-module-transforms" "7.0.0-beta.46"
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
 "@babel/plugin-transform-new-target@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-new-target/-/plugin-transform-new-target-7.0.0-beta.44.tgz#7f3a2c46e01b5433093430892fbce287583cb1b8"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
+
+"@babel/plugin-transform-new-target@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-new-target/download/@babel/plugin-transform-new-target-7.0.0-beta.46.tgz#e3219c15a2175a29afa33b9b2f4c18dc1ae3c8cc"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
 
 "@babel/plugin-transform-object-assign@^7.0.0-beta":
   version "7.0.0-beta.46"
@@ -727,6 +986,13 @@
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
     "@babel/helper-replace-supers" "7.0.0-beta.44"
 
+"@babel/plugin-transform-object-super@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-object-super/download/@babel/plugin-transform-object-super-7.0.0-beta.46.tgz#b5376fe93f5e154b765468f1a58a717717f95827"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/helper-replace-supers" "7.0.0-beta.46"
+
 "@babel/plugin-transform-parameters@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-parameters/-/plugin-transform-parameters-7.0.0-beta.44.tgz#19eaf0b852d58168097435e33e754a00c3507fb9"
@@ -735,7 +1001,7 @@
     "@babel/helper-get-function-arity" "7.0.0-beta.44"
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
-"@babel/plugin-transform-parameters@^7.0.0-beta":
+"@babel/plugin-transform-parameters@7.0.0-beta.46", "@babel/plugin-transform-parameters@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-parameters/-/plugin-transform-parameters-7.0.0-beta.46.tgz#33bbd2e3bd499d99016034dcaf8c6b72c2a69ec3"
   dependencies:
@@ -777,7 +1043,7 @@
   dependencies:
     regenerator-transform "^0.12.3"
 
-"@babel/plugin-transform-regenerator@^7.0.0-beta":
+"@babel/plugin-transform-regenerator@7.0.0-beta.46", "@babel/plugin-transform-regenerator@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-regenerator/-/plugin-transform-regenerator-7.0.0-beta.46.tgz#875ceb5b37ec0e898c23b60af760715d9d462b4f"
   dependencies:
@@ -789,7 +1055,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
-"@babel/plugin-transform-shorthand-properties@^7.0.0-beta":
+"@babel/plugin-transform-shorthand-properties@7.0.0-beta.46", "@babel/plugin-transform-shorthand-properties@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-shorthand-properties/-/plugin-transform-shorthand-properties-7.0.0-beta.46.tgz#aa21512b0fef7b916fc5cbc87df717465c25515c"
   dependencies:
@@ -801,7 +1067,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
-"@babel/plugin-transform-spread@^7.0.0-beta":
+"@babel/plugin-transform-spread@7.0.0-beta.46", "@babel/plugin-transform-spread@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-spread/-/plugin-transform-spread-7.0.0-beta.46.tgz#48eabb219f1e0c16e9b0a6166072ae9d4c7cd397"
   dependencies:
@@ -814,6 +1080,13 @@
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
     "@babel/helper-regex" "7.0.0-beta.44"
 
+"@babel/plugin-transform-sticky-regex@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-sticky-regex/download/@babel/plugin-transform-sticky-regex-7.0.0-beta.46.tgz#c96c41f31272ec1cdc47dd91a22c6d75c4db70d2"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/helper-regex" "7.0.0-beta.46"
+
 "@babel/plugin-transform-template-literals@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-template-literals/-/plugin-transform-template-literals-7.0.0-beta.44.tgz#88d4605e63a21a4354837af06371e8c51cd76d08"
@@ -821,7 +1094,7 @@
     "@babel/helper-annotate-as-pure" "7.0.0-beta.44"
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
-"@babel/plugin-transform-template-literals@^7.0.0-beta":
+"@babel/plugin-transform-template-literals@7.0.0-beta.46", "@babel/plugin-transform-template-literals@^7.0.0-beta":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-template-literals/-/plugin-transform-template-literals-7.0.0-beta.46.tgz#e8bcc798dece29807893e8ee27ccf3176f658c62"
   dependencies:
@@ -834,12 +1107,26 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
+"@babel/plugin-transform-typeof-symbol@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-typeof-symbol/download/@babel/plugin-transform-typeof-symbol-7.0.0-beta.46.tgz#643529184cbb07199237c94537c89ea9a721fa0a"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+
 "@babel/plugin-transform-unicode-regex@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-unicode-regex/-/plugin-transform-unicode-regex-7.0.0-beta.44.tgz#d7cf607948da5e997e277eba1caed30e80beaf76"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
     "@babel/helper-regex" "7.0.0-beta.44"
+    regexpu-core "^4.1.3"
+
+"@babel/plugin-transform-unicode-regex@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/plugin-transform-unicode-regex/download/@babel/plugin-transform-unicode-regex-7.0.0-beta.46.tgz#10e6edcc8eb0db71ff2f0e3fc87ed88337d24fb9"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/helper-regex" "7.0.0-beta.46"
     regexpu-core "^4.1.3"
 
 "@babel/preset-env@^7.0.0-beta.44":
@@ -886,6 +1173,50 @@
     invariant "^2.2.2"
     semver "^5.3.0"
 
+"@babel/preset-env@^7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/preset-env/download/@babel/preset-env-7.0.0-beta.46.tgz#ae1b731ef71c2bb50c47e0cda4b6359ea2c61f09"
+  dependencies:
+    "@babel/helper-module-imports" "7.0.0-beta.46"
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-proposal-async-generator-functions" "7.0.0-beta.46"
+    "@babel/plugin-proposal-object-rest-spread" "7.0.0-beta.46"
+    "@babel/plugin-proposal-optional-catch-binding" "7.0.0-beta.46"
+    "@babel/plugin-proposal-unicode-property-regex" "7.0.0-beta.46"
+    "@babel/plugin-syntax-async-generators" "7.0.0-beta.46"
+    "@babel/plugin-syntax-object-rest-spread" "7.0.0-beta.46"
+    "@babel/plugin-syntax-optional-catch-binding" "7.0.0-beta.46"
+    "@babel/plugin-transform-arrow-functions" "7.0.0-beta.46"
+    "@babel/plugin-transform-async-to-generator" "7.0.0-beta.46"
+    "@babel/plugin-transform-block-scoped-functions" "7.0.0-beta.46"
+    "@babel/plugin-transform-block-scoping" "7.0.0-beta.46"
+    "@babel/plugin-transform-classes" "7.0.0-beta.46"
+    "@babel/plugin-transform-computed-properties" "7.0.0-beta.46"
+    "@babel/plugin-transform-destructuring" "7.0.0-beta.46"
+    "@babel/plugin-transform-dotall-regex" "7.0.0-beta.46"
+    "@babel/plugin-transform-duplicate-keys" "7.0.0-beta.46"
+    "@babel/plugin-transform-exponentiation-operator" "7.0.0-beta.46"
+    "@babel/plugin-transform-for-of" "7.0.0-beta.46"
+    "@babel/plugin-transform-function-name" "7.0.0-beta.46"
+    "@babel/plugin-transform-literals" "7.0.0-beta.46"
+    "@babel/plugin-transform-modules-amd" "7.0.0-beta.46"
+    "@babel/plugin-transform-modules-commonjs" "7.0.0-beta.46"
+    "@babel/plugin-transform-modules-systemjs" "7.0.0-beta.46"
+    "@babel/plugin-transform-modules-umd" "7.0.0-beta.46"
+    "@babel/plugin-transform-new-target" "7.0.0-beta.46"
+    "@babel/plugin-transform-object-super" "7.0.0-beta.46"
+    "@babel/plugin-transform-parameters" "7.0.0-beta.46"
+    "@babel/plugin-transform-regenerator" "7.0.0-beta.46"
+    "@babel/plugin-transform-shorthand-properties" "7.0.0-beta.46"
+    "@babel/plugin-transform-spread" "7.0.0-beta.46"
+    "@babel/plugin-transform-sticky-regex" "7.0.0-beta.46"
+    "@babel/plugin-transform-template-literals" "7.0.0-beta.46"
+    "@babel/plugin-transform-typeof-symbol" "7.0.0-beta.46"
+    "@babel/plugin-transform-unicode-regex" "7.0.0-beta.46"
+    browserslist "^3.0.0"
+    invariant "^2.2.2"
+    semver "^5.3.0"
+
 "@babel/preset-react@^7.0.0-beta.46":
   version "7.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.0.0-beta.46.tgz#f2c7f05ce0c9f1bf25516f1acaf00ca0dfc1bfa5"
@@ -896,6 +1227,52 @@
     "@babel/plugin-transform-react-jsx" "7.0.0-beta.46"
     "@babel/plugin-transform-react-jsx-self" "7.0.0-beta.46"
     "@babel/plugin-transform-react-jsx-source" "7.0.0-beta.46"
+
+"@babel/preset-stage-0@^7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/preset-stage-0/download/@babel/preset-stage-0-7.0.0-beta.46.tgz#1a73727b776ff1f024d698194bc65e0849690083"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-proposal-function-bind" "7.0.0-beta.46"
+    "@babel/preset-stage-1" "7.0.0-beta.46"
+
+"@babel/preset-stage-1@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/preset-stage-1/download/@babel/preset-stage-1-7.0.0-beta.46.tgz#01700f8c221ccab279de5ab2badc0ad27f3100e1"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-proposal-do-expressions" "7.0.0-beta.46"
+    "@babel/plugin-proposal-export-default-from" "7.0.0-beta.46"
+    "@babel/plugin-proposal-logical-assignment-operators" "7.0.0-beta.46"
+    "@babel/plugin-proposal-nullish-coalescing-operator" "7.0.0-beta.46"
+    "@babel/plugin-proposal-optional-chaining" "7.0.0-beta.46"
+    "@babel/plugin-proposal-pipeline-operator" "7.0.0-beta.46"
+    "@babel/preset-stage-2" "7.0.0-beta.46"
+
+"@babel/preset-stage-2@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/preset-stage-2/download/@babel/preset-stage-2-7.0.0-beta.46.tgz#326e4eba3049181f9ff7b0c50fa84f1a045956b1"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-proposal-decorators" "7.0.0-beta.46"
+    "@babel/plugin-proposal-export-namespace-from" "7.0.0-beta.46"
+    "@babel/plugin-proposal-function-sent" "7.0.0-beta.46"
+    "@babel/plugin-proposal-numeric-separator" "7.0.0-beta.46"
+    "@babel/plugin-proposal-throw-expressions" "7.0.0-beta.46"
+    "@babel/preset-stage-3" "7.0.0-beta.46"
+
+"@babel/preset-stage-3@7.0.0-beta.46":
+  version "7.0.0-beta.46"
+  resolved "http://registry.npm.taobao.org/@babel/preset-stage-3/download/@babel/preset-stage-3-7.0.0-beta.46.tgz#f64cb3950a00021e4ed9d88c190d30c4736c54a9"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.46"
+    "@babel/plugin-proposal-async-generator-functions" "7.0.0-beta.46"
+    "@babel/plugin-proposal-class-properties" "7.0.0-beta.46"
+    "@babel/plugin-proposal-object-rest-spread" "7.0.0-beta.46"
+    "@babel/plugin-proposal-optional-catch-binding" "7.0.0-beta.46"
+    "@babel/plugin-proposal-unicode-property-regex" "7.0.0-beta.46"
+    "@babel/plugin-syntax-dynamic-import" "7.0.0-beta.46"
+    "@babel/plugin-syntax-import-meta" "7.0.0-beta.46"
 
 "@babel/register@^7.0.0-beta":
   version "7.0.0-beta.46"
@@ -2264,7 +2641,7 @@ babel-preset-fbjs@^2.1.2, babel-preset-fbjs@^2.1.4:
 
 babel-preset-react-native@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-4.0.0.tgz#3df80dd33a453888cdd33bdb87224d17a5d73959"
+  resolved "http://registry.npm.taobao.org/babel-preset-react-native/download/babel-preset-react-native-4.0.0.tgz#3df80dd33a453888cdd33bdb87224d17a5d73959"
   dependencies:
     babel-plugin-check-es2015-constants "^6.5.0"
     babel-plugin-react-transform "^3.0.0"
@@ -3035,6 +3412,12 @@ clean-css@4.1.x:
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.11.tgz#2ecdf145aba38f54740f26cefd0ff3e03e125d6a"
   dependencies:
     source-map "0.5.x"
+
+clean-webpack-plugin@^0.1.19:
+  version "0.1.19"
+  resolved "http://registry.npm.taobao.org/clean-webpack-plugin/download/clean-webpack-plugin-0.1.19.tgz#ceda8bb96b00fe168e9b080272960d20fdcadd6d"
+  dependencies:
+    rimraf "^2.6.1"
 
 cli-boxes@^1.0.0:
   version "1.0.0"
@@ -6338,6 +6721,10 @@ jsesc@~0.5.0:
 json-buffer@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/json-buffer/-/json-buffer-3.0.0.tgz#5b1f397afc75d677bde8bcfc0e47e1f9a3d9a898"
+
+json-enhance@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/json-enhance/download/json-enhance-1.0.0.tgz#de341032f1f44e35691fcc275ebec00c4f08759d"
 
 json-parse-better-errors@^1.0.0, json-parse-better-errors@^1.0.1, json-parse-better-errors@^1.0.2:
   version "1.0.2"

@@ -3,14 +3,17 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "electron-webpack dev",
-    "compile": "electron-webpack",
-    "dist": "yarn compile && electron-builder",
+    "electron-dev": "electron-webpack dev",
+    "electron-compile": "electron-webpack",
+    "electron-dist": "yarn electron-compile && electron-builder",
+    "web-dev": "webpack-dev-server --config ./webpack/webpack.config.web.development.js",
+    "web-compile": "webpack --config webpack/webpack.config.web.production.js",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
     "@material-ui/icons": "^1.0.0-beta.43",
     "antd-mobile": "^2.1.8",
+    "json-enhance": "^1.0.0",
     "material-ui": "^1.0.0-beta.45",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -19,7 +22,11 @@
     "source-map-support": "^0.5.5"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.0.0-beta.46",
     "@babel/preset-react": "^7.0.0-beta.46",
+    "@babel/preset-stage-0": "^7.0.0-beta.46",
+    "babel-preset-react-native": "^4.0.0",
+    "clean-webpack-plugin": "^0.1.19",
     "electron": "2.0.0",
     "electron-builder": "^20.11.1",
     "electron-webpack": "^2.0.1",
