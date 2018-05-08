@@ -14,14 +14,24 @@ module.exports = {
   entry: './src/web/index',
 
   output: {
-    filename: '[name].[hash:8].js',
+    filename: '[name].[chunkhash:8].js',//chunkhash可以保证根据文件内容hash，减少公共模块重新下载
     // chunkFilename: '[name].[hash:8].js',
     path: path.resolve(__dirname, '../', 'dist-web')
   },
 
   //代码输出优化
-  // optimization: {
-  // },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'modules',
+          priority: 10,
+          chunks: 'all'
+        }
+      }
+    }
+  },
 
   module: {
     rules: [
@@ -56,15 +66,15 @@ module.exports = {
 
   plugins: [
     //删除旧的编译输出文件
-    new CleanWebpackPlugin(
-      [
-        'dist-web',
-      ],
-      {
-        root: `${projectPath}`,
-        verbose: true,
-      }
-    ),
+    // new CleanWebpackPlugin(
+    //   [
+    //     'dist-web',
+    //   ],
+    //   {
+    //     root: `${projectPath}`,
+    //     verbose: true,
+    //   }
+    // ),
     //压缩js代码插件
     new UglifyJSPlugin({
       uglifyOptions: {
