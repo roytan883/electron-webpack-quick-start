@@ -19,6 +19,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   "context": `${projectPath}`,
   "mode": "development",
+  "devtool": "eval-source-map", //在浏览器中调试模式可以查看源代码,此模式下初次生成慢,但是之后的热更新编译快
   entry: './src/web/index',
   module: {
     rules: [
