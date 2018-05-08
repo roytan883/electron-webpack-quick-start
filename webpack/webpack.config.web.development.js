@@ -61,7 +61,6 @@ module.exports = {
     }),
 
     //热更新插件
-    new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],
   //热更新服务器配置
