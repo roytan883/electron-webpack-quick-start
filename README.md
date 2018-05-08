@@ -1,11 +1,10 @@
-> if 'can't find module' need modify this file node_modules\electron-webpack\out\targets\RendererTarget.js
+> if has error 'can't find module', you can modify this file node_modules\electron-webpack\out\targets\RendererTarget.js line 285:
 
+```${nodeModulePath == null ? "" : `require("module").globalPaths.push("${nodeModulePath.replace(/\\/g, "\\\\")}")`}```
+> to
 
-`
-+ nodeModulePath = nodeModulePath.replace(/\\/g, "\\\\")
-before
-await (0, _fsExtraP().outputFile)(filePath, `<!DOCTYPE html>
-`
+```${nodeModulePath == null ? "" : `require("module").globalPaths.push("${nodeModulePath.replace(/\\/g, "/")}")`}```
+
 
 # electron-webpack-quick-start
 > A bare minimum project structure to get started developing with [`electron-webpack`](https://github.com/electron-userland/electron-webpack).
