@@ -3,17 +3,6 @@ const path = require('path');
 
 const projectPath = path.join(__dirname, '../')
 
-/*
- * We've enabled ExtractTextPlugin for you. This allows your app to
- * use css modules that will be moved into a separate CSS file instead of inside
- * one of your module entries!
- *
- * https://github.com/webpack-contrib/extract-text-webpack-plugin
- *
- */
-
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -36,25 +25,29 @@ module.exports = {
       },
       {
         test: /\.css$/,
-
-        use: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                sourceMap: true
-              }
+        // use: ['style-loader', 'css-loader']
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
             }
-          ],
-          fallback: 'style-loader'
-        })
+          }
+        ],
+      },
+      {
+        test: /\.less$/,
+        use: ['css-loader', 'less-loader']
+      },
+      {
+        test: /\.scss$/,
+        use: ['css-loader', 'sass-loader']
       }
     ]
   },
 
   plugins: [
-    new ExtractTextPlugin('style.css'),
-
     //html模板插件
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../', 'src/web/index.html'),

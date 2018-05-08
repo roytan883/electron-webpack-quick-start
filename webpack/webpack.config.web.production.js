@@ -1,37 +1,16 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const projectPath = path.join(__dirname, '../')
-
-/*
- * We've enabled UglifyJSPlugin for you! This minifies your app
- * in order to load faster and run less javascript.
- *
- * https://github.com/webpack-contrib/uglifyjs-webpack-plugin
- *
- */
-
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-
-/*
- * We've enabled ExtractTextPlugin for you. This allows your app to
- * use css modules that will be moved into a separate CSS file instead of inside
- * one of your module entries!
- *
- * https://github.com/webpack-contrib/extract-text-webpack-plugin
- *
- */
-
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+const projectPath = path.join(__dirname, '../')
 
 module.exports = {
   "context": `${projectPath}`,
   "mode": "production",
-
+  "devtool": false,
   entry: './src/web/index',
 
   output: {
@@ -62,18 +41,15 @@ module.exports = {
       },
       {
         test: /\.css$/,
-
-        use: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                sourceMap: true
-              }
-            }
-          ],
-          fallback: 'style-loader'
-        })
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.less$/,
+        use: ['css-loader', 'less-loader']
+      },
+      {
+        test: /\.scss$/,
+        use: ['css-loader', 'sass-loader']
       }
     ]
   },
@@ -100,8 +76,6 @@ module.exports = {
         }
       }
     }),
-
-    new ExtractTextPlugin('style.css'),
 
     //html模板插件
     new HtmlWebpackPlugin({
