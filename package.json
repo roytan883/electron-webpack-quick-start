@@ -8,6 +8,8 @@
     "electron-dist": "yarn electron-compile && electron-builder",
     "web-dev": "webpack-dev-server --config ./webpack/webpack.config.web.development.js",
     "web-compile": "webpack --config webpack/webpack.config.web.production.js",
+    "web-compile-ssr": "webpack --config webpack/webpack.config.web.production.ssr.js",
+    "web-compile-ssr-html": "babel-node ssr.js",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
@@ -22,18 +24,26 @@
     "source-map-support": "^0.5.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/node": "^7.0.0-beta.46",
+    "@babel/polyfill": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
+    "@babel/preset-es2015": "^7.0.0-beta.46",
     "@babel/preset-react": "^7.0.0-beta.46",
     "@babel/preset-stage-0": "^7.0.0-beta.46",
+    "@babel/register": "^7.0.0-beta.46",
+    "babel-loader": "^8.0.0-beta.2",
     "babel-preset-react-native": "^4.0.0",
     "clean-webpack-plugin": "^0.1.19",
     "electron": "2.0.0",
     "electron-builder": "^20.11.1",
     "electron-webpack": "^2.0.1",
     "eslint": "^4.19.1",
+    "extract-text-webpack-plugin": "^3.0.2",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "webpack": "^4.7.0",
+    "webpack-node-externals": "^1.7.2",
     "webpack-sources": "1.1.0"
   },
   "resolutions": {
