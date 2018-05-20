@@ -20,12 +20,12 @@ module.exports = {
         options: {
           babelrc: false,
           presets: [
-            // "@babel/preset-env",
             "@babel/preset-react",
-            // "@babel/preset-env",
-            // "@babel/preset-stage-0",
-            // "react-native",
-          ]
+            ["@babel/preset-stage-2", { "loose": true, "decoratorsLegacy": true }]
+          ],
+          plugins: [
+            "@babel/plugin-transform-runtime",
+          ],
         }
       },
       {
