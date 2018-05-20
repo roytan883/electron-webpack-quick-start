@@ -11,12 +11,12 @@ module.exports = {
   "context": `${projectPath}`,
   "mode": "production",
   "devtool": false,
-  entry: './src/web/index',
+  entry: './src/web-admin/index',
 
   output: {
     filename: '[name].[chunkhash:8].js',//chunkhash可以保证根据文件内容hash，减少公共模块重新下载
     // chunkFilename: '[name].[hash:8].js',
-    path: path.resolve(__dirname, '../', 'dist-web')
+    path: path.resolve(__dirname, '../', 'dist/web-admin')
   },
 
   //代码输出优化
@@ -64,9 +64,21 @@ module.exports = {
         use: ['css-loader', 'sass-loader']
       },
       {
-        test: /\.(png|jpg|jpeg)$/,
-        use: ['url-loader']
+        test: /\.(png|jpg|jpeg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash].[ext]',
+              outputPath: 'static/',
+            }
+          }
+        ]
       },
+      // {
+      //   test: /\.(png|jpg|jpeg)$/,
+      //   use: ['url-loader']
+      // },
     ]
   },
 
@@ -95,7 +107,7 @@ module.exports = {
 
     //html模板插件
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, '../', 'src/web/index.html'),
+      template: path.resolve(__dirname, '../', 'src/web-admin/index.html'),
     }),
   ],
 };

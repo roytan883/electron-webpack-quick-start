@@ -10,6 +10,8 @@
     "web-compile": "webpack --config webpack/webpack.config.web.production.js",
     "web-compile-ssr": "webpack --config webpack/webpack.config.web.production.ssr.js",
     "web-compile-ssr-html": "babel-node ssr.js",
+    "web-admin-dev": "webpack-dev-server --config ./webpack/webpack.config.web-admin.development.js",
+    "web-admin-compile": "webpack --config webpack/webpack.config.web-admin.production.js",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {

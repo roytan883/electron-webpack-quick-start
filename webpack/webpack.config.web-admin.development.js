@@ -9,7 +9,7 @@ module.exports = {
   "context": `${projectPath}`,
   "mode": "development",
   "devtool": "eval-source-map", //在浏览器中调试模式可以查看源代码,此模式下初次生成慢,但是之后的热更新编译快
-  entry: './src/web/index',
+  entry: './src/web-admin/index',
   module: {
     rules: [
       {
@@ -50,16 +50,28 @@ module.exports = {
         use: ['css-loader', 'sass-loader']
       },
       {
-        test: /\.(png|jpg|jpeg)$/,
-        use: ['url-loader']
+        test: /\.(png|jpg|jpeg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              outputPath: 'static/',
+            }
+          }
+        ]
       },
+      // {
+      //   test: /\.(png|jpg|jpeg)$/,
+      //   use: ['url-loader']
+      // },
     ]
   },
 
   plugins: [
     //html模板插件
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, '../', 'src/web/index.html'),
+      template: path.resolve(__dirname, '../', 'src/web-admin/index.html'),
     }),
 
     //热更新插件
@@ -69,7 +81,7 @@ module.exports = {
   "devServer": {
     "contentBase": [
       // `${projectPath}\\dist-web`,
-      `${projectPath}\\static`,
+      `${projectPath}/src/web-admin/static`,
       // `${projectPath}\\dist-web\\renderer-dll`
     ],
     "host": "localhost",
