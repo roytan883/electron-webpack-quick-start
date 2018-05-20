@@ -25,6 +25,12 @@ module.exports = {
           ],
           plugins: [
             "@babel/plugin-transform-runtime",
+            ["import",
+              {
+                "libraryName": "antd",
+                "style": true
+              }
+            ],
           ],
         }
       },
@@ -43,7 +49,17 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        use: ['css-loader', 'less-loader']
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'less-loader',
+            options: {
+              javascriptEnabled: true,
+              modifyVars: { "@primary-color": "#1DA57A" },
+            }
+          }
+        ]
       },
       {
         test: /\.scss$/,

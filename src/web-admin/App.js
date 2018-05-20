@@ -9,6 +9,9 @@ import img1 from './static/favicon.png'
 
 import './App.css'
 
+import { Button } from 'antd';
+
+
 class TempMobx {
   @observable num = 0;
   @action async start() {
@@ -37,6 +40,8 @@ export default class App extends Component {
         Web-admin: hello world
         <br />
         <h1 className="h1-my">ABCDE = {this.tempMobx.num}</h1>
+        <br />
+        <Button type="primary">Primary</Button>
         <br />
         <img src={img1} />
       </div>

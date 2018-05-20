@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@material-ui/icons": "^1.0.0-beta.43",
+    "antd": "^3.5.3",
     "antd-mobile": "^2.1.8",
     "json-enhance": "^1.0.0",
     "material-ui": "^1.0.0-beta.45",
