@@ -1,50 +1,34 @@
 import React, { Component } from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router'
 
 import { Helmet } from "react-helmet";
 
 import { observable, action } from "mobx";
 import { observer } from 'mobx-react'
 
-import img1 from './static/favicon.png'
+import { gd, gm, gs } from './stores'
 
-import './App.css'
+import PrivateRoute from './components/PrivateRoute.jsx'
 
-import { Button } from 'antd';
-
-
-class TempMobx {
-  @observable num = 0;
-  @action async start() {
-    setInterval(() => {
-      this.num = Math.random()
-    }, 1000)
-  }
-}
-
+import Login from './pages/Login.jsx'
+import Nav from './pages/Nav.jsx'
 
 @observer
 export default class App extends Component {
-
-  constructor(props) {
-    super(props)
-    this.tempMobx = new TempMobx()
-    this.tempMobx.start()
-  }
-
   render() {
     return (
-      <div>
-        <Helmet>
-          <link rel="icon" href={img1} type="image/x-icon" />
-        </Helmet>
-        Web-admin: hello world
-        <br />
-        <h1 className="h1-my">ABCDE = {this.tempMobx.num}</h1>
-        <br />
-        <Button type="primary">Primary</Button>
-        <br />
-        <img src={img1} />
-      </div>
+      <BrowserRouter>
+
+        {/* <Route path='/' component={CheckLogin} /> */}
+        <Switch>
+          <Route exact path="/login" component={Login} />
+          <PrivateRoute exact path="/nav" component={Nav} />
+          <Route path="/" render={() => (
+            gs.isLogin ? <Redirect to="/login" /> : <Redirect to="/nav" />
+             )} />
+        </Switch>        
+      </BrowserRouter>
     )
   }
 }

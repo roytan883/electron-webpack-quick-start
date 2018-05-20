@@ -18,6 +18,7 @@
     "@material-ui/icons": "^1.0.0-beta.43",
     "antd": "^3.5.3",
     "antd-mobile": "^2.1.8",
+    "bluebird": "^3.5.1",
     "json-enhance": "^1.0.0",
     "material-ui": "^1.0.0-beta.45",
     "mobx": "^4.2.1",
@@ -26,6 +27,8 @@
     "react-dom": "^16.3.2",
     "react-helmet": "^5.2.0",
     "react-native": "^0.55.3",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "source-map-support": "^0.5.5"
   },
   "devDependencies": {
