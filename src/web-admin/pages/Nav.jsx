@@ -25,14 +25,13 @@ class NavSider extends React.Component {
     this.setState({
       current: e.key,
     });
-    if (e.key == "Index") {
-      gm.goPage("/")
-    }
-    if (e.key == "page1") {
-      gm.goPage("/page1")
-    }
-    if (e.key == "page2") {
-      gm.goPage("/page2")
+    switch (e.key) {
+      case "index": gm.goPage("/"); break;
+      case "page1": gm.goPage("/page1"); break;
+      case "page2": gm.goPage("/page2"); break;
+
+      default:
+        break;
     }
   }
   render() {
@@ -45,13 +44,13 @@ class NavSider extends React.Component {
         selectedKeys={[this.state.current]}
         mode="inline"
       >
-        <Menu.Item key="Index">
+        <Menu.Item key="index">
           <Icon type="pie-chart" />
-          <span>Option 1</span>
+          <span>首页</span>
         </Menu.Item>
         <SubMenu key="sub1" title={<span><Icon type="mail" /><span>Navigation One</span></span>}>
-          <Menu.Item key="page1">Page1</Menu.Item>
-          <Menu.Item key="page2">Page2</Menu.Item>
+          <Menu.Item key="page1">页面1</Menu.Item>
+          <Menu.Item key="page2">页面2</Menu.Item>
           <Menu.Item key="3">Option 3</Menu.Item>
           <Menu.Item key="4">Option 4</Menu.Item>
         </SubMenu>
