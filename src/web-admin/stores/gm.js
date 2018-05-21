@@ -11,9 +11,11 @@ class MyEmitter extends EventEmitter { }
 
 class GM {
   constructor() {
+    this.history = null
   }
   //event bus
   eb = new MyEmitter()
+
 
   async login(userName, password) {
     gs.logining = true
@@ -25,6 +27,18 @@ class GM {
     await Bluebird.delay(1000)
     gs.logining = false
     gs.isLogin = true
+  }
+
+  setHistory(history) {
+    this.history = history
+  }
+
+  goPage(pageName, params) {
+    console.log("gs goPage history = ", history)
+    this.history.push(pageName, params)
+  }
+  goBack() {
+    this.history.goBack()
   }
 }
 

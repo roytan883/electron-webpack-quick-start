@@ -12,21 +12,21 @@ import { gs, gd, gm } from '../stores'
 export default class Login extends Component {
   render() {
     return (
-      gs.isLogin ? <Redirect to="/nav" /> :
-      <div>
-        Web-admin: hello world
+      gs.isLogin ? <Redirect to="/" /> :
+        <div>
+          Web-admin: hello world
         <br />
-        <h1>ABCDE</h1>
-        <br />
-        <Button
-          type="primary"
-          loading={gs.logining}
-          onClick={() => {
-            gm.login("aaa", "bbb")
-          }}>Login</Button>
-        <br />
-        <img src={img1} />
-      </div>
+          <h1>ABCDE</h1>
+          <br />
+          <Button
+            type="primary"
+            loading={gs.logining}
+            onClick={() => {
+              gm.login("aaa", "bbb")
+            }}>Login</Button>
+          <br />
+          <img src={img1} />
+        </div>
     )
   }
 }
