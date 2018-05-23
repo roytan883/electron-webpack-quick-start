@@ -55,10 +55,34 @@ class NavSider extends React.Component {
         <SubMenu key="Day" title={<span><Icon type="appstore" /><span>每日挑战</span></span>}>
           <Menu.Item key="DaySetting">设置</Menu.Item>
           <Menu.Item key="DayText">正文</Menu.Item>
-          <Menu.Item key="DayExamLib">题库</Menu.Item>
-          <Menu.Item key="DayResult">结果</Menu.Item>
+          <SubMenu key="DayExamLib" title="每日题库">
+            <Menu.Item key="7">乘务员</Menu.Item>
+            <Menu.Item key="8">机长</Menu.Item>
+            <Menu.Item key="8234">机车副司机</Menu.Item>
+          </SubMenu>
+          <Menu.Item key="DayResult`">统计/导出</Menu.Item>
         </SubMenu>
-        <SubMenu key="sub4" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
+        <SubMenu key="Day2" title={<span><Icon type="appstore" /><span>全员对战</span></span>}>
+          <Menu.Item key="DaySetting2">设置</Menu.Item>
+          <Menu.Item key="DayText2">正文</Menu.Item>
+          <SubMenu key="DayExamLib2" title="全员题库">
+            <Menu.Item key="72">乘务员</Menu.Item>
+            <Menu.Item key="82">机长</Menu.Item>
+            <Menu.Item key="82342">机车副司机</Menu.Item>
+          </SubMenu>
+          <Menu.Item key="DayResult2`">统计/导出</Menu.Item>
+        </SubMenu>
+        <SubMenu key="Day3" title={<span><Icon type="appstore" /><span>好友对战</span></span>}>
+          <Menu.Item key="DaySetting3">设置</Menu.Item>
+          <Menu.Item key="DayText3">正文</Menu.Item>
+          <SubMenu key="DayExamLib3" title="好友题库">
+            <Menu.Item key="73">乘务员</Menu.Item>
+            <Menu.Item key="83">机长</Menu.Item>
+            <Menu.Item key="82343">机车副司机</Menu.Item>
+          </SubMenu>
+          <Menu.Item key="DayResult3`">统计/导出</Menu.Item>
+        </SubMenu>
+        <SubMenu key="fasdf" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
           <Menu.Item key="9">Option 9</Menu.Item>
           <Menu.Item key="10">Option 10</Menu.Item>
           <Menu.Item key="11">Option 11</Menu.Item>
